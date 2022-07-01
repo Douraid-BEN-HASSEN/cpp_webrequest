@@ -32,7 +32,7 @@ response = request.post(url, data, options);
 // Example GET request
 CWebrequest request;
 QMap<QByteArray, QByteArray> options;
-QString url = "https://google.com";
+QString url = "https://example.com";
 QString response = "";
 
 options.insert("Accept", "application/json");
