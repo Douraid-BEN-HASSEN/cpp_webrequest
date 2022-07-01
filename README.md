@@ -20,7 +20,7 @@ LIBS += {open_ssl_path}\libssl.lib
 // Example POST request
 CWebrequest request;
 QMap<QByteArray, QByteArray> options;
-QString url = "URL";
+QString url = "http://example.com";
 QString data = "{\"data\":\"test\"";
 QString response = "";
 
