@@ -19,24 +19,24 @@ LIBS += {open_ssl_path}\libssl.lib
 ```
 // Example POST request
 CWebrequest request;
-QMap<QByteArray, QByteArray> options;
+QMap<QByteArray, QByteArray> headers;
 QString url = "http://example.com";
 QString data = "{\"data\":\"test\"";
 QString response = "";
 
-options.insert("Content-Type", "application/json");
-options.insert("Accept", "application/json");
+headers.insert("Content-Type", "application/json");
+headers.insert("Accept", "application/json");
 
-response = request.post(url, data, options);
+response = request.post(url, data, headers);
 
 // Example GET request
 CWebrequest request;
-QMap<QByteArray, QByteArray> options;
+QMap<QByteArray, QByteArray> headers;
 QString url = "https://example.com";
 QString response = "";
 
-options.insert("Accept", "application/json");
+headers.insert("Accept", "application/json");
 
-response = request.posgett(url, options);
+response = request.get(url, headers);
 ```
 
